@@ -14,5 +14,8 @@ Se x e y são números, é possível realizar qualquer operação normalmente, p
 x = 10 e y = 5;  
 soma = 15  
   
-x = "10" e y = 5;
-soma = 105
+x = "10" e y = 5;  
+soma = 105  
+  
+## For e while
+Usar for quando souber o número de exercuções e while quando esse número for desconhecido.
