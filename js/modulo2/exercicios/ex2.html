@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RS JS Ex2 M2</title>
+</head>
+<body>
+    
+    <button onclick="adicionaQuadrado()">Adicionar quadrado</button>
+    
+    <script>
+        
+        function adicionaQuadrado(){
+            var boxElement = document.createElement('div');
+            boxElement.style.width = "100px";
+            boxElement.style.height = "100px";
+            boxElement.style.backgroundColor = "#f00";
+            boxElement.style.marginBottom = "10px";
+
+            boxElement.classList.add('box');
+
+            document.body.appendChild(boxElement);
+
+            boxElement.addEventListener("mouseover", () => {
+                let newColor = corAleatoria();
+
+                console.log(newColor);
+
+                boxElement.style.backgroundColor = newColor;
+            });
+        }
+
+        function corAleatoria(){
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for(var i = 0; i < 6; i++){
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+    
+    </script>
+</body>
+</html>

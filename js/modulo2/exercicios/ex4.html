@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RS JS Ex4 M2</title>
+</head>
+<body>
+
+    <input type="text" name="nome" />
+    <button onclick="adicionaNaLista()">Adicionar</button>
+    
+    <br />
+
+    <ul></ul>
+
+    <script>
+
+    var inputElement = document.querySelector('input');
+    var lista = document.querySelector('ul');
+        
+    function adicionaNaLista() {
+        var text = inputElement.value; // pega o valor como uma string
+        var texto = document.createTextNode(text);
+        var li = document.createElement('li');
+        li.appendChild(texto);
+        lista.appendChild(li);
+        inputElement.value = "";
+    };
+    
+    </script>
+</body>
+</html>
