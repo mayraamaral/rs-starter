@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+        <input type="text" name="nome" />
+        <button class="botao">Adicionar</button>
+    </div>
+
+    <script>
+        //var inputElement = document.getElementsByClassName('nome')[0];
+        var inputElement = document.querySelector('div.app input'); // ('input[name=nome]')
+        var btnElement = document.querySelector('button.botao');
+        btnElement.onclick = function() {
+            var text = inputElement.value; // pega o valor como uma string
+            alert(text); // mostra essa string
+        };
+        console.log(inputElement);
+    
+    </script>
+</body>
+</html>

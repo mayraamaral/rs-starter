@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RS JS Aula 7</title>
+</head>
+<body>
+    <script>
+    
+    var genero = 'F', idade = '19';
+
+    if(genero === 'F' && idade > 18){ /* || -> isso é ou */
+        console.log("Ok!");
+    }
+    if(genero !== 'M'){ /* ! = = é negação */
+        console.log("Não é do gênero masculino.");
+    }
+
+    /* Também é uma boa prática usar variáveis booleanas: */
+    
+    var masculino;
+
+    /*if(genero === 'M'){
+        masculino = true;
+    } else {
+        masculino = false;
+    }*/
+
+    /* Para diminuir esse if: */
+
+    var masculino = genero === 'M';
+    console.log('Masculino: ' + masculino);
+
+    </script>
+</body>
+</html>
