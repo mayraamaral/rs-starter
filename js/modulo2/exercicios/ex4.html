@@ -21,8 +21,8 @@
     var lista = document.querySelector('ul');
         
     function adicionaNaLista() {
-        var text = inputElement.value; // pega o valor como uma string
-        var texto = document.createTextNode(text);
+        var textElement = inputElement.value; // pega o valor como uma string
+        var texto = document.createTextNode(textElement);
         var li = document.createElement('li');
         li.appendChild(texto);
         lista.appendChild(li);
