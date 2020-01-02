@@ -10,6 +10,6 @@ Por: Mayra Amaral.
 * Módulo 2  
 [Códigos das aulas](https://github.com/mayraamaral/rs-starter/tree/master/js/modulo2)  
 [Exercícios resolvidos](https://github.com/mayraamaral/rs-starter/tree/master/js/modulo2/exercicios)
-* Módulo 3
+* Módulo 3  
 [Projeto das aulas](https://github.com/mayraamaral/rs-starter/tree/master/js/modulo3-app-de-to-dos)  
 Descrição: Web app para criação e exclusão de ToDos (tarefas).

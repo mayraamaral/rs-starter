@@ -2,14 +2,7 @@ var listElement = document.querySelector('#app ul');
 var inputElement = document.querySelector('#app input');
 var botao = document.querySelector('#app button');
 
-var toDos = [
-    /* Caso o To-Do tivesse mais de uma propriedade:
-     * { text: 'Fazer café', propriedade: 1 } 
-     */
-    'Fazer café',
-    'Estudar JavaScript',
-    'Acessar comunidade da Rocketseat'
-];
+var toDos = JSON.parse(localStorage.getItem('list_todos')) || [];
 
 function renderToDos(){
 
@@ -24,6 +17,9 @@ function renderToDos(){
         var linkText = document.createTextNode('Excluir');
 
         linkElement.appendChild(linkText);
+
+        var pos = toDos.indexOf(toDo); // armazena a posicao do todo em pos
+        linkElement.setAttribute('onclick', 'deleteToDo(' + pos + ')');
 
         toDoElement.appendChild(toDoText); // adiciona o texto ao elemento todo (o li)
         toDoElement.appendChild(linkElement);
@@ -40,7 +36,19 @@ function addToDo(){
     toDos.push(toDoText); // adiciona a variavel q acabou de ser criada ao array (no final)
     inputElement.value = ''; // limpa o input
     renderToDos(); // renderiza novamente para aparecer o novo item acrescentado
-
+    saveToStorage();
 }
 
 botao.onclick = addToDo;
+
+function deleteToDo(pos){
+
+    toDos.splice(pos, 1);
+    renderToDos();
+    saveToStorage();
+
+}
+
+function saveToStorage(){
+    localStorage.setItem('list_todos', JSON.stringify(toDos));
+}
