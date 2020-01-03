@@ -20,3 +20,9 @@ soma = 105
 Usar for quando souber o número de exercuções e while quando esse número for desconhecido.
 ## O que é a DOM?
 É a árvore de elementos do arquivo HTML.
+## O que é AJAX?
+Asynchronous JavaScript and XML. Ajax mescla JS com XML para trabalhar com vetores e dados através da padronização do XML.
+## Axios
+[Documentação do Axios](https://github.com/axios/axios)
+Biblioteca utilizada no módulo 4 - aula 3.  
+Facilita requisições XMLHttp.
