@@ -1,4 +1,5 @@
-# Anotações do curso Starter - Rocketseat  
+# Anotações do curso Starter - Rocketseat
+Por: Mayra Amaral.  
 [Site da Rocketseat](https://skylab.rocketseat.com.br)
   
 ## Guia
